@@ -1,0 +1,16 @@
+void main(void){
+  int a;
+  a = 1;
+  /*int i;
+  a = 10;
+  i = 0;
+  while(i < 10){
+    i = i + 1;
+    a = a + i;
+    if(a > 5){
+      output(a);
+    }
+  }*/
+  while(1)
+    return ;
+}

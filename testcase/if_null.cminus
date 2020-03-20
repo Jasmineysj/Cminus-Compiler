@@ -1,0 +1,18 @@
+int main(void){
+  int a;
+  a = 10;
+  
+  if(a > 1){
+      a = 2;
+      if(a > 1){
+          a = 3;
+          if(a > 1){
+              a = 4;
+          }
+      }
+  } else {
+      a = 3;
+  }
+  
+  return a;
+}

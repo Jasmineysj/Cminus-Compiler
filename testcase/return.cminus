@@ -1,0 +1,15 @@
+void main(void){
+	int a;
+	a = 10;
+	/*if(a>5) return;
+	else return;
+	if(a>3) a = 1;
+	else a = 6;*/
+	output(6);
+	while(a){
+		a = a - 1;
+		output(6);
+		while(1)
+		return;
+	}
+}

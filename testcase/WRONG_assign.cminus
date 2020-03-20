@@ -1,0 +1,5 @@
+void main(void){
+    int a ;
+    a = b * 2 + 1; 
+    return;
+}

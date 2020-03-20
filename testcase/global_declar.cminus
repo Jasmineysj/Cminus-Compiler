@@ -1,0 +1,9 @@
+int a; 
+int ab[10];
+void main(void){
+    int b;
+    b = a;
+    ab[1] = 2;
+    output(ab[1]); 
+    return;
+}

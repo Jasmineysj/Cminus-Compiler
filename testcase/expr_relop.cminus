@@ -1,0 +1,29 @@
+int main(void) {
+    int x;
+    int y;
+    x = 0;
+    output(x);
+    x = 1 < 1;
+    output(x);
+    x = 2 + 3;
+    output(x);
+    x = (33);
+    output(x);
+    x = y = 99;
+    output(x);
+    x = 1 == 0;
+    output(x);
+    x = 2 * 3;
+    output(x);
+    x = 2 / 3;
+    output(x);
+    x = 2 - 3;
+    output(x);
+    x = 2 <= 3;
+    output(x);
+    x = 2 > 3;
+    output(x);
+    x = 2 >= 3;
+    output(x);
+    return x;
+}

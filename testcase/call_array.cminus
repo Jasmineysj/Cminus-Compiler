@@ -1,0 +1,12 @@
+int call(int a[], int b[],int n, int c[]){
+    return b[n];
+}
+
+int main(void){
+   int a[10];
+   int b[5];
+   b[1] = 1;
+   a[0] = 10;
+   c = 1;
+   return call(a,b,1, a);
+}

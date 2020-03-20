@@ -1,0 +1,20 @@
+int fff(int x){
+	return x+x-x;
+}
+int x[10];
+void main(void){
+	int i;
+	i = 0-1;
+	while (i < 9)
+		output(x[i=i+1]);
+	i = 0-1;
+	while (i < 9)
+		x[i=i+1]=input();
+	while (i >= 0)
+		if (fff(x[i])==0){
+			output(i);
+			return;
+		}else i=i-1;
+	output(i);
+	return;
+}

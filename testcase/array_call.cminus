@@ -1,0 +1,66 @@
+/* 这个testcase 是用于测试数组变量出现的各种情况
+ * 1. 函数参数
+ * 2. 数组变量作为index
+ * 3. if/while的判断 
+ */
+
+int call(int a, int b){
+    return a;
+}
+
+int callmom(int a, int b){
+    return a;
+}
+
+int callhim(int a[], int b){
+    return a[0];
+}
+
+int callher(int a[], int b[],int n){
+    return a[n];
+}
+
+
+int main(void){
+    int a[10];
+    int b;
+    int c;
+    int d[5];
+    a[1] = 7;
+    d[1] = 1;
+    b = 1;
+    a[2] = 10;
+
+    c = call(a[0],b);
+    c = call(a[b],b);
+    c = call(a[ d[1] ], b );
+    c = call(a[ d[ d[ d[1] ] ] ], b );
+    c = call(a[ d[ d[ d[1] ] ] ] * d[1], b );
+
+    c = callmom(a[ d[ d[ d[1] ] ] ] > d[1], b );
+    c = callmom((a[ d[ d[ d[1] ] ] ] > d[1]) * a[ d[ d[ d[1] ] ] ] + 1, b );
+    c = callmom((a[ d[ d[ d[1] ] ] ] > d[1]) + a[ d[ d[ d[1] ] ] ] * 6, b );
+
+    /*if else 嵌套 */
+    if ((a[ d[ d[ d[1] ] ] ] > d[1]))  c = (a[ d[1] ] * d[1] ) + 10 - b;
+    else{
+            c = (a[ d[ d[ d[1] ] ] ] > d[1]) + a[ d[ d[ d[1] ] ] ] * 6;
+            if (b == 1) c = 0;
+            else return c;
+        }
+
+    while((a[ d[ d[ d[1] ] ] ] > b)){
+            b = b + callmom((a[ d[ d[ d[1] ] ] ] > d[1]) * a[ d[ d[ d[1] ] ] ] + 1, b );;
+    }
+
+    /*函数作为数组index*/
+    c = a[callmom(a[ d[ d[ d[1] ] ] ] > d[1], b )];
+
+    /*函数返回值作为判断*/
+    if ( callmom(a[ d[ d[ d[1] ] ] ] > d[1], b )) c = 0;
+    
+    /*函数作为参数*/
+    callmom( callmom(a[ d[ d[ d[1] ] ] ] > d[1], b ),b  );
+    
+    return callmom(a[ d[ d[ d[1] ] ] ] > d[1], b );;
+}

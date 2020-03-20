@@ -1,0 +1,20 @@
+
+
+int call(int b[],int a){
+    b[a] = b[2];
+    b[1] = a;
+    return b[0];
+}
+
+int callmom(int b){
+    b = b + 1;
+    return b;
+}
+
+int main(void){
+    int a[10];
+    int b;
+    b = 1;
+    callmom(b = 1);
+    return 0;
+}

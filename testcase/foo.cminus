@@ -1,0 +1,11 @@
+void call(int a, int b){
+    return ;
+}
+
+void main(void){
+   /* call(10, 20);*/
+   int a;       /* int a = 10; 是错的，不符合C-语法*/
+   a = 10;
+   a = a < 2 ;
+   return ;
+}

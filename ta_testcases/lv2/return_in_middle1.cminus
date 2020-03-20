@@ -1,0 +1,11 @@
+void main(void) {
+  int i;
+  if (1) {
+    i = 1;
+    return;
+  } else {
+    i = 2;
+  }
+  output(3);
+  return;
+}
